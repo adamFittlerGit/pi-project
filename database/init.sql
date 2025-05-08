@@ -8,7 +8,8 @@ CREATE TABLE IF NOT EXISTS USERS (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 );
 
-CREATE TABLE IF NOT EXISTS CHAT (
+-- create chats table
+CREATE TABLE IF NOT EXISTS CHATS (
     chat_id uuid PRIMARY KEY DEFAULT uuid_generate_v4(),
     user_id uuid,
     history TEXT,
